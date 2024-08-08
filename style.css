@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-image: linear-gradient(180deg, blue, lightblue);
+}
+
+.navbar {
+  display: flex;
+  background-color: white;
+  gap: 10px;
+  padding: 20px 53.5px 20px 25px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, .3);
+  width: 313.19px;
+  transition: width ease-out .45s;
+  overflow: hidden;
+  position: relative;
+}
+
+.navbar.colapse {
+  padding: 20px 25px;
+  width: 72.75px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+  align-items: center;
+  font-size: 18px;
+  margin: 0;
+  transition: transform linear .35s;
+}
+
+.slide-out {
+  transform: translateX(-70%);
+}
+
+.nav-link {
+  cursor: pointer;
+  transition: rotate ease-out 1s;
+
+}
+
+.btn {
+  font-size: 26px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgb(99, 164, 185);
+  transition: rotate ease-out 1s;
+  position: absolute;
+  right: 25px;
+  padding: 0;
+  background-color: #fff;
+}
+
+.nav-link:hover, .btn:hover {
+  opacity: .7;
+}
+
+.rotate {
+  rotate: -720deg;
+}
